@@ -1,0 +1,34 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <title>Autoevaluación 1_16.html</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script languaje= "JavaScript">            
+            //Programa 1_16 autoevaluación1
+            
+            /*  Programa que calcula el punto medio de un segmento.
+                La salida es la siguiente:
+                    El punto medio del segmento
+                    de extremos, los puntos:
+                    ( 7, -4 ) y ( 5, 6 ) es ( 6, 1 )
+                Formula:
+
+                    PuntoMedio = ( (x1+x2)/2 , (y1,y2)/2 )
+            */
+            var x1, x2, y1, y2, axisX, axisY;
+            alert("Programa que calcula el punto medio de un segmento de recta. \n");
+            x1 = parseFloat(prompt("Please, Write the number of x1: " + "\n a = ( x1, y1 ) , b = ( x2 * y2 )", ""));
+            y1 = parseFloat(prompt("Please, Write the number of y1: " + "\n a = ( " + x1 + ", y1 ) , b = ( x2 * y2 )", ""));
+            x2 = parseFloat(prompt("Please, Write the number of x2: " + "\n a = ( " + x1 + ", " + y1 + " ) , b = ( x2 * y2 )", ""));
+            y2 = parseFloat(prompt("Please, Write the number of y2: " + "\n a = ( " + x1 + ", " + y1 + " ) , b = ( " + x2 + " * y2 )", ""));
+            alert( "Los vectores son: " + "\n a = ( " + x1 + ", " + y1 + " ) y b = ( " + x2 + ", " + y2 + " )");
+            axisX = ( x1 + x2 ) / 2;
+            axisY = ( y1 + y2 ) / 2;
+            alert( "El punto medio del segmento\n de extremos, los puntos: " + "\n a = ( " + x1 + ", " + y1 + " ) y b = ( " + x2 + ", " + y2 + " ) es ( " + axisX + ", " + axisY + " )");            
+        </script>
+        
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>

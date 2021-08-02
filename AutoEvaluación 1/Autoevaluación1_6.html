@@ -1,0 +1,27 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <title>Autoevaluación 1_6.html</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script languaje= "JavaScript">            
+            //Programa 1_6 autoevaluación1
+            
+            /* Programa que calcule la longitud de una circunferencia y el área del círculo correspondiente.
+                -> areaCirculo = pi * radio ^ 2
+                -> longitudCircunferencia = 2 * pi * radio
+                Pi = Math.PI
+            */
+            var radius, areaCircle, lengthCircumference;
+            radius = parseFloat(prompt("Please, Write the radius of the circle in meters:", ""));
+            areaCircle = Math.PI * (radius*radius);
+            lengthCircumference = 2 * (Math.PI) * radius;
+            alert("The radius of the circle is: " + radius + "\n" +
+                  "Area of the circle = " + areaCircle + "\n" +
+                  "Length of the circumference = " + lengthCircumference);
+        </script>
+        
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>

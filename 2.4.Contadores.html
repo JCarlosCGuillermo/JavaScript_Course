@@ -1,0 +1,80 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <title>Programa 2_4.html</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script languaje= "JavaScript">            
+            //Programa 2_4 ejercicio
+            
+            /*  Contadores
+                    - [ a = a + 1 ] : es equivalente a escribir [ a++ ]
+                    - [ a = a - 1 ] : es equivalente a escribir [ a-- ]
+                    - [ num = num + 2 ] : es equivalente a escribir [ num += 2 ]
+                    - [ num = num * 2 ] : es equivalente a escribir [ num *= 2 ]
+                    - [ num = num / 2 ] : es equivalente a escribir [ num /= 2 ]
+            */
+
+
+
+            //  Programa 2.4.1 
+
+            /*  Programa que realiza la siguiente funcion:
+                    inicial:    
+                            i = 2   -   j = 7   ---> i menor j : se cumple : si 
+                            i = 3   -   j = 6   ---> i menor j : se cumple : si 
+                            i = 4   -   j = 5   ---> i menor j : se cumple : si 
+                            i = 5   -   j = 4   ---> i menor j : se cumple : no --> ya no se coloca y hace break.
+            */
+            /*
+            var i = 2;
+            var res = "";
+            var j = 7;
+            
+            while (i < j) {
+                res = res + " " + i + " " + j + "\n";
+                i++;
+                j--;
+            }
+            alert(res);
+            */
+
+
+
+            //  Programa 2.4.2
+            
+            /*  Programa que repite un texto cualquiera, el nombre de veces que queremos, utilizando un "while".
+            */
+            /*
+            var number1, text1, count = 1, string1 = "";
+            text1 = prompt("Please, write a text: ", "");
+            number1 = parseInt(prompt("Please, Number of times you want to repeat the text: ", ""));
+            while(count <= number1){
+                string1 += text1 + "\n";
+                count++;
+            }
+            alert(string1);
+            */
+
+
+
+            //  Programa 2.4.3
+
+            /*  Programa que acumula la suma y el producto de los numeros que queremos
+            */
+            var number, sum = 0, multiplication = 1, answer = "";
+            number = parseFloat(prompt("Please, Write a number other than zero: ", ""));
+            while (number != 0) {
+                sum = sum + number;
+                multiplication = multiplication * number;
+                answer = answer + number + "\tPartial sum: " + sum + "\tPartial multiplication: " + multiplication + "\n";
+                number = parseFloat(prompt("Please, Write another number(To finish enter zero): ", ""));
+            }
+            alert(answer);
+            
+        </script>
+        
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>

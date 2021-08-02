@@ -1,0 +1,45 @@
+<!DOCTYPE html5>
+    <head>
+        <title>Programa 5.html</title>
+    </head>
+    <body>
+        <script languaje= "JavaScript">
+            /*  Al declarar una variable, este no pertenece a ningun tipo de dato concreto, se dice que es Undefined. Es al asignarle
+                un valor cuando psa a ser de uno u oto tipo, segun el dato que albergue.
+
+                Existen 6 tipos de datos:
+                    1. String: cadenas.
+                    2. Number: valores numericos.
+                    3. Boolean: true o false.
+                    4. Object: objetos.
+                    5. Null: Nulo.
+                    6. Undefined: no definido.
+                Nota: typeof: se usa para conocer el tipo de dato que contiene una variable.
+            */
+
+            //Programa 05
+            var expVariable;
+            var impCadena1 = "hola que tal, ";
+            var impNumber = 75.47;
+            var impCadena2 = "¿Como estas?";
+            var impBoolean = true;
+
+            alert("expVariable = " + expVariable);
+            alert("expVariable es de tipo " + (typeof(expVariable)));
+
+            expVariable = impCadena1 + impCadena2;
+
+            alert("expVariable = " + expVariable);
+            alert("expVariable es de tipo" + (typeof(expVariable)));
+            
+            alert("impNumber = " + impNumber);
+            alert("impNumber es de tipo " + (typeof(impNumber)));
+            
+            alert("impCadena2 = " + impCadena2);
+            alert("impCadena2 es de tipo " + (typeof(impCadena2)));
+
+            alert("impBoolean = " + impBoolean);
+            alert("impBoolean es de tipo " + (typeof(impBoolean)));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <title>Autoevaluación 1_14.html</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script languaje= "JavaScript">            
+            //Programa 1_14 autoevaluación1
+            
+            /*  Programa que calcula el producto escalar de dos vectores del plano. La salida es la siguiente:
+                    Producto escalar de los vectores:
+                    (x1,y1) y (x1,y2) es resultado
+                    
+                    [u*v] = (x1,x2) + (y1,y2)
+            */
+            var scarlarProduct, x1, x2, y1, y2;
+            alert("Programa que realiza el producto escalar de dos vectores. " + "\n" + "->  ->" + "\nU * V = (x1 * x2) + (y1 * x2)");
+            x1 = parseFloat(prompt("Please, Write a number of x1: " + "\nU * V = (x1 * x2) + (y1 * y2)", ""));
+            y1 = parseFloat(prompt("Please, Write a number of y1: " + "\nU * V = (" + x1 + " * x2) + (y1 * y2)", ""));
+            x2 = parseFloat(prompt("Please, Write a number of x2: " + "\nU * V = (" + x1 + " * x2) + (" + y1 + " * y2)", ""));
+            y2 = parseFloat(prompt("Please, Write a number of y2: " + "\nU * V = (" + x1 + " * " + x2 + ") + (" + y1 + " * y2)", ""));
+            alert( "Producto escalar es el siguiente: "+ "\nU * V = (" + x1 + " * " + x2 + ") + (" + y1 + " * " + y2 + ")");
+            scarlarProduct = (x1 * x2) + (y1 * y2);
+            alert("El producto escalar de los vectores:\n" + "( " + x1 + ", " + y1 + " ) y ( " + x2 + ", " + y2 + " ) es " + scarlarProduct);
+        </script>
+        
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>

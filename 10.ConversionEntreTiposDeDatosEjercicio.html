@@ -1,0 +1,36 @@
+<!DOCTYPE html5>
+    <head>
+        <title>Programa 10.html</title>
+    </head>
+    <body>
+        <script languaje= "JavaScript">
+            /*  Escribir un programa que pregunte por un número base a decimal
+            */
+
+            //Programa 10_1 ejercicio
+            var cad1, cad2, cad3, cad4;
+            cad1 = parseInt(prompt("Escribe un valor hexadecimal: ", ""), 16);
+            cad2 = parseInt(prompt("Escribe un valor en base 7: ", ""), 7);
+            cad3 = parseInt(prompt("Escribe un valor en base 4: ", ""), 4);
+            cad4 = parseInt(prompt("Escribe un valor en base 6: ", ""), 6);
+            alert("Valor en base 16 a decimal es= " + cad1 + "\n" +
+                   "Valor en base 7 a decimal es= " + cad2 + "\n" +
+                   "Valor en base 4 a decimal es= " + cad3 + "\n" +
+                   "Valor en base 6 a decimal es= " + cad4);
+            
+            
+            
+            /*  Escribir un programa que pregunte por un número decimal y combierta a bases
+            */
+
+            //Programa 10_2 ejercicio
+            var number1, number2, number3, number4;
+            number1 = parseFloat(prompt("Escribe un número entero positivo: "));
+            alert("Valor decimal en base 16 es= " + (number1.toString(16)) + "\n" +
+                  "Valor decimal en base 7 es= " + (number1.toString(7)) + "\n" +
+                  "Valor decimal en base 4 es= " + (number1.toString(4)) + "\n" +
+                  "Valor decimal en base 6 es= " + (number1.toString(6)));
+        </script>
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>

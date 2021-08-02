@@ -1,0 +1,27 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <title>Autoevaluación 1_7.html</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script languaje= "JavaScript">            
+            //Programa 1_7 autoevaluación1
+            
+            /* Programa que calcule un determinante de Segundo orden.
+                      
+                      |(1,1)  (1,2)|
+                det = |(2,1)  (2,2)| = (1,1)*(2,2) - (2,1)*(1,2) = x    
+            */
+            var number1_1, number1_2, number2_1, number2_2, determinant;
+            number1_1 = parseFloat(prompt("Please, Write the number of the matrix(1,1)", ""));
+            number1_2 = parseFloat(prompt("Please, Write the number of the matrix(1,2)", ""));
+            number2_1 = parseFloat(prompt("Please, Write the number of the matrix(2,1)", ""));
+            number2_2 = parseFloat(prompt("Please, Write the number of the matrix(2,2)", ""));
+            determinant = ((number1_1)*(number2_2)) - ((number2_1)*(number1_2));
+            alert("The result of the second orden determinant is:\n" + determinant);
+        </script>
+        
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>

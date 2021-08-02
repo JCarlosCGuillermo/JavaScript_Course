@@ -1,0 +1,103 @@
+<!DOCTYPE html5>
+    <head>
+        <title>Programa 10.html</title>
+    </head>
+    <body>
+        <script languaje= "JavaScript">
+            /*  Conversión implícita de tipos
+                    observa:
+                        var variable1 = "75";
+                        var variable2 = 25;
+                        var variable3, variable4;
+                        variable3 = variable1 + variable2;
+                        variable4 = variable2 + variable1;
+                
+                    Cuando se suman "cadenas de texto" con cualquier otra cosa, los otros tipos de datos se convierten en cadenas de texto.
+                    Pero si restamos, multiplicamos o dividimos "cadenas de texto", realiza las operaciones correspondientes.
+
+                    Nota:
+                        -> Si sumamos dos cadenas (aunque contengan números) de texto se produce la concatenación (unión) de los dos textos.
+                        -> Si multiplicamos (o hacemos cualquier operacion aritmética que no sea la suma), dos cadenas de texto que en realidad 
+                           tienen números, se produce una conversion implícita de las cadenas a números y aparece el producto aritmético de
+                           los números.
+                
+                Conversión explicita de tipos
+                    -> parseFloat(cadena)
+                        Toma la "cadena" y la transformas en un número en coma flotante, si es posible.
+                            - parseFloat("123.456") = 123.456
+                            - parseFloat("123ABS") = 123
+                            - parseFloat("ABC") = NaN
+                    
+                    -> parseInt(cadena, numero)
+                        Devuelve números enteros, el segundo argumento nos permite escoger la base de numeración (entre 2 y 36).
+                            - parseInt("ABC", 16) = 2748 -> ABC en base 16 = 2748 en decimal
+                        Si la cadena empieza por "0x" y no existe el segundo argumento, se entiende que es 16.
+                        si la cadena empieza por "0" y no existe el segundo argumento, se entiende que es 8.
+                    
+                    -> toString(argumento)
+                        si argumento = número, devueve una cadena que contiene el número.
+                        Puede haber un argumento opcional:
+                            (13).toString(16) = "d" siendo  .... 13 (decimal) = d (hexadecimal)
+                            (13).toString(2) = "1101" siendo ... 13 (decimal) = 1101 (binario)
+                
+                NOTA: Se debe tener claro si los "PROMPT" corresponden a números enteros, decimales o de texto.
+                    -> Si "x" ha de ser un número entero escribimos:
+                        x = parseInt(prompt("Escribe un número entero: ", ""));
+                    -> Si "x" ha de ser un número decimal escribimos:
+                        x = parseFloat(prompt("Escribe un numero entero o decimal", ""));
+                    -> Si "x" ha de ser una cadena de texto escribimos:
+                        x = prompt("Escribe el texto correspondiente: ", "");
+            */
+
+            //Programa 10_1
+             
+             //var number1 = "30";
+             //var number2 = "15";
+             //alert("30 + 15 = " + (number1 + number2));
+             //alert("30 * 15 = " + (number1 * number2));
+             //alert("30 * 15 = " + (number1 - number2));
+             //alert("30 * 15 = " + (number1 / number2));
+
+
+             //Programa 10_2
+
+             //var number3, number4;
+             //number3 = prompt("Escribe un número: ", "");
+             //number4 = prompt("Escribe otro número: ", "");
+             //alert("La suma es = " + (number3 + number4));
+
+
+
+             //Programa 10_3 
+             /* Programa que suma números con la funcion parseFloat*/
+             
+             //var number5, number6, summatory;
+             //number5 = prompt("Escribe un número: ", "");
+             //number5 = parseFloat(number5);
+             //number6 = prompt("Escribe otro número: ", "");
+             //number6 = parseFloat(number6);
+             //summatory = number5 + number6;
+             //alert("La suma es = " + summatory);
+
+
+             //Programa 10_4
+             /* Programa que utiliza la función parseInt para realizar las operaciones aritmeticas. */
+
+             var x, y, suma, resta, producto, division, promedio;
+             x = parseInt(prompt("Escribe un número: ", ""));
+             y = parseInt(prompt("Escribe otro numero: ", ""));
+             suma = x + y;
+             resta = x - y;
+             producto = x * y;
+             division = x / y;
+             promedio = suma / 2;
+             alert("Operaciones aritmeticas\n" +
+                   x + " + " + y + " = " + suma +"\n" +
+                   x + " - " + y + " = " + resta +"\n" +
+                   x + " * " + y + " = " + producto +"\n" +
+                   x + " / " + y + " = " + division +"\n" +
+                   "(" + x + " + " + y +") / 2 = " + promedio);
+        </script>
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>

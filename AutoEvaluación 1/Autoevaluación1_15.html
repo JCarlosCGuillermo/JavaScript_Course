@@ -1,0 +1,44 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <title>Autoevaluación 1_15.html</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script languaje= "JavaScript">            
+            //Programa 1_15 autoevaluación1
+            
+            /*  Programa que calcula el coseno del ángulo que forman dos vectores del plano, sabiendo que :
+                    -> Math.sqrt(x): calcula la raíz cuadrada de x.
+                La salida es la siguiente:
+                    El coseno del ángulo que forman  los vectores:
+                    ( x1, y1 ) y ( x2, y2 ) es -0.5889858361599183
+                Formula:
+                     _   _
+                    a * b = (x1 * x2) + ( y1 * y2) ....(1)
+                    _      ____________________
+                   |a| = \/(x1 ^ 2) + (xy ^ 2)   ......(2.1)
+                    _      ____________________
+                   |b| = \/(x2 ^ 2) + (x2 ^ 2)   ......(2.2)
+                                     _   _
+                                     a * b
+                   cos(alpha) =  __ _ ___ _ __   ......(3)
+                                   |a| * |b|
+            */
+            var scarlarProduct, moduleA, moduleB, cosenoAlpha, x1, x2, y1, y2;
+            alert("Programa que realiza calcula el coseno del ángulo de dos vectores del plano bidimencional. \n");
+            x1 = parseFloat(prompt("Please, Write the number of x1: " + "\n a = ( x1, y1 ) , b = ( x2 * y2 )", ""));
+            y1 = parseFloat(prompt("Please, Write the number of y1: " + "\n a = ( " + x1 + ", y1 ) , b = ( x2 * y2 )", ""));
+            x2 = parseFloat(prompt("Please, Write the number of x2: " + "\n a = ( " + x1 + ", " + y1 + " ) , b = ( x2 * y2 )", ""));
+            y2 = parseFloat(prompt("Please, Write the number of y2: " + "\n a = ( " + x1 + ", " + y1 + " ) , b = ( " + x2 + " * y2 )", ""));
+            alert( "Los vectores son: " + "\n a = ( " + x1 + ", " + y1 + " ) y b = ( " + x2 + ", " + y2 + " )");
+            scarlarProduct = (x1 * x2) + (y1 * y2);
+            moduleA = Math.sqrt(Math.pow(x1, 2) + Math.pow(y1, 2));
+            moduleB = Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2));
+            cosenoAlpha = (scarlarProduct) / (moduleA * moduleB);
+            alert( "Los vectores son: " + "\n a = ( " + x1 + ", " + y1 + " ) y b = ( " + x2 + ", " + y2 + " )\n" + "El coseno de alpha es: " + cosenoAlpha);
+        </script>
+        
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>

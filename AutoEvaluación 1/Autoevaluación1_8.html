@@ -1,0 +1,28 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <title>Autoevaluación 1_8.html</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script languaje= "JavaScript">            
+            //Programa 1_8 autoevaluación1
+            
+            /* Programa igual al programa 1_8, pero que represente los 4 elementos del determinante tabulados en 2 filas y 2 columnas.
+            */
+            var number1_1, number1_2, number2_1, number2_2, determinant;
+            alert("Program that calculates the second orden determinant. \n           |(1,1)   (1,2)|\n det = |                 | \n           |(2,1)   (2,2)|")
+            number1_1 = parseFloat(prompt("Please, Write the number of the matrix(1,1):\n           |(1,1)   (1,2)|\n det = |                 | \n           |(2,1)   (2,2)|", ""));
+            number1_2 = parseFloat(prompt("Please, Write the number of the matrix(1,2):\n           |(" + number1_1 + ")   (1,2)|\n det = |                 | \n           |(2,1)   (2,2)|", ""));
+            number2_1 = parseFloat(prompt("Please, Write the number of the matrix(2,1):\n           |(" + number1_1 + ")   (" + number1_2 + ")|\n det = |                 | \n           |(2,1)   (2,2)|", ""));
+            number2_2 = parseFloat(prompt("Please, Write the number of the matrix(2,2):\n           |(" + number1_1 + ")   (" + number1_2+ ")|\n det = |                 | \n           |(" + number2_1 + ")   (2,2)|", ""));
+            alert("The Matrix is:\n           |(" + number1_1 + ")   (" + number1_2 + ")|\n det = |                 | \n           |(" + number2_1 + ")   (" + number2_2 + ")|");
+            determinant = ((number1_1)*(number2_2)) - ((number2_1)*(number1_2));
+            alert("The result of the second orden determinant is:\n" +
+                  "\n           |(" + number1_1 + ")   (" + number1_2 + ")|\n det = |                 | \n           |(" + number2_1 + ")   (" + number2_2 + ")|" +
+                  "\n\n det = ((" + number1_1 + ")*(" + number2_2 + ")) - ((" + number2_1 + ")*(" + number1_2 + ")) = " + determinant);
+        </script>
+        
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>

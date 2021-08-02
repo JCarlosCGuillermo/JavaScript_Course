@@ -1,0 +1,72 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <title>Programa 2_5.html</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script languaje= "JavaScript">            
+            //Programa 2_5 ejercicio
+            
+            /*  La estructura de programación "for".
+                    -> Estructura.
+                        for (contador = valorInicial; condición; expresiónDeIncremento) {
+                            ...;
+                            ...;
+                            ...;
+                        }
+
+                    -> Ejemplo:
+                        for (i = 1; i <= 10; i++) {
+                            sentencia1,
+                            sentencia2;
+                            sentencia3;
+                        }
+            */
+
+
+
+            //  Programa 2.5.1
+
+            /*  Programa que repite un texto cualquiera en número de veces que queremos, utilizando "for".
+            */
+            /*
+            var text1, numberOfTimes, string1 = "";
+            text1 = prompt("Please, Write a short text: ", "");
+            numberOfTimes = parseInt(prompt("Please, Write a number of times: ", ""));
+            for (i = 1; i <= numberOfTimes; i++){
+                string1 += i + ".- " + text1 + "\n";  
+            }
+            alert(string1);
+            */
+
+
+            var output = "", sum = 0;
+            for (multiplication = 11; multiplication < 3000; multiplication = multiplication + 11) {
+                output += multiplication + ", ";
+                sum = sum + multiplication;
+            }
+            alert(output + "\nLa suma de todos ellos es = " + sum);
+
+
+            var factorial = 1, number1;
+            number1 = parseInt(prompt("please, Write a positive whole number ", ""));
+            for (i = 1; i <= number1; i++) factorial *= i; 
+            alert("The factorial of " + number1 + " is = " + factorial);
+
+
+            var resultAddition = 0, number1, output = "", multiplication;
+            number1 = parseInt(prompt("Please, Write a number: ", ""));
+            for (i = 1; i <= 10; i++){
+                multiplication = number1 * i;
+                resultAddition += multiplication;
+                output += multiplication + ", ";
+            }
+            alert("Los multiplos de " + number1 + " son: \n" + output + "\nLa suma de los números es : " + resultAddition);
+
+
+        </script>
+        
+        <t1>successful javascript execution !!! </t1>
+    </body>
+</html>
